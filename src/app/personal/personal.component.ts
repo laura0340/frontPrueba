@@ -24,7 +24,6 @@ export class PersonalComponent implements OnInit {
       this.token = false;
 
     }
-    console.log('thistokren', this.token);
   }
 
   async loadInfo(): Promise<void> {
