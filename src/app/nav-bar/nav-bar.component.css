@@ -1,0 +1,118 @@
+:host {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100% !important;
+    background-color: #2d323e;
+    width: 270px;
+    height: 100% !important;
+    -webkit-box-shadow: 4px 3px 9px 0px rgba(71,68,71,1);
+    -moz-box-shadow: 4px 3px 9px 0px rgba(71,68,71,1);
+    box-shadow: 4px 3px 9px 0px rgba(71,68,71,1);
+}
+
+.head {
+    width: 100% !important;
+    height: 200px;
+    background-color: #1e2129;
+}
+
+.head {
+    color: white;
+}
+
+.toolbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*color: white;*/
+    font-weight: 400;
+    background-color: #2d323e;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    color: white
+}
+
+.row mat-icon {
+    float: left;
+    color: white;
+    margin: 8px 20px;
+}
+
+.option {
+    width: 80%;
+    display: flex;
+    margin: 0 0 0 2em;
+    padding-top: 1.4em;
+    color: white;
+    cursor: pointer;
+    align-items: center;
+}
+
+
+.optionChildren{
+    margin-top: 1em;
+    width: 80%;
+}
+
+.name-collapsable {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.center-name {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+}
+
+.selected {    
+    width: 70%;
+    margin-top: 10px;
+    padding: 5px;
+    padding-left: 20px;
+    border-radius: 0px 20px 20px 0px;
+    background-color: #36dfaa;
+}
+
+.options {
+    width: 100%;
+    text-align: left !important;
+}
+
+a, h3 {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.space {
+    height: 50px;
+}
+
+.spacer {
+    flex: 1;
+}
+
+.menu-icon {
+    background-color: transparent;
+    border: none;
+    width: 30px;
+    color: white;
+}
+
+.dark {
+    margin: 0.1em;
+    height: 3em !important;
+    max-height: 3em !important;
+}

@@ -1,0 +1,34 @@
+<div class="container" *ngIf="token">
+    <div class="row header-content">
+        <div class="col">
+          <h2 class="header-title">Datos De Residencia</h2>
+        </div>
+    </div>
+    <div class="table-container">
+        <table class="table-content">
+            <!--Table head-->
+            <thead>
+                <tr>
+                <th>Salario</th>
+                <th>Otros ingresos</th>
+                <th>Gastos mensuales</th>
+                <th>Gastos financieros</th>
+                </tr>
+            </thead>
+            <!--Table head-->
+            <!--Table body-->
+            <tbody>
+                <tr *ngFor="let usuario of listUsuarios" >
+                 <td>{{ usuario.salario }}</td>
+                 <td>{{ usuario.otrosIngresos }}</td>
+                 <td>{{ usuario.gastosMensuales }}</td>
+                 <td>{{ usuario.gastosFinancieros }}</td>
+                </tr>
+            </tbody>
+            <!--Table body-->
+        </table>
+    </div>
+</div>
+<div *ngIf="!token">
+    <h1>Debe loguearse para acceder</h1>
+</div>

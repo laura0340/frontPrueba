@@ -1,0 +1,68 @@
+
+<div class="container" *ngIf="token">
+    <div class="row head-container box-content" id="header">
+        <h2>Adicionar Usuarios</h2>
+        <div class="filter"></div>
+        <button mat-raised-button class="unpressed-button" (click)="submit()" [disabled]="!newUser.valid" >Guardar</button>
+    </div>
+    <div class="row">
+        <div class="space"></div>
+        <div class="space"></div>
+    </div>
+    <h4>* Se activará la acción de guardar usuario cuando los campos requeridos sean diligenciados </h4>
+    <div class="form-container">
+        <form [formGroup]="newUser" *ngIf="newUser">
+            <div class="column">
+                <h3>DATOS PERSONALES</h3>
+                <mat-form-field appearance="outline" class="largo">
+                    <input matInput formControlName="nombre" placeholder="Nombre del usuario" />
+                </mat-form-field>
+                <mat-form-field appearance="outline" class="largo">
+                    <input matInput formControlName="numeroId" placeholder="Identificación del usuario" />
+                </mat-form-field>
+                <mat-form-field appearance="outline" class="largo">
+                    <input matInput formControlName="celular" placeholder="Celular del usuario" />
+                </mat-form-field>
+                <mat-form-field appearance="outline" class="largo">
+                    <input matInput (blur)="checkEmail = true" #email formControlName="email" placeholder="Correo del usuario" />
+                </mat-form-field>
+                <mat-form-field appearance="outline" class="largo">
+                    <input matInput type="password" formControlName="password" placeholder="Contraseña del usuario" />
+                </mat-form-field>
+                <mat-form-field appearance="outline" class="largo">
+                    <input matInput type="password" formControlName="passwordConfirm" placeholder="Repetir contraseña" />
+                </mat-form-field>
+                <mat-error class="mat-error" *ngIf="checarSiSonIguales()">Las contraseñas no coinciden</mat-error>
+                <h3>DATOS DE RESIDENCIA</h3>
+                <mat-form-field appearance="outline" class="largo">
+                    <input matInput formControlName="departamento" placeholder="Departamento del usuario" />
+                </mat-form-field>
+                <mat-form-field appearance="outline" class="largo">
+                    <input matInput formControlName="ciudad" placeholder="Ciudad del usuario" />
+                </mat-form-field>
+                <mat-form-field appearance="outline" class="largo">
+                    <input matInput formControlName="barrio" placeholder="Barrio del usuario" />
+                </mat-form-field>
+                <mat-form-field appearance="outline" class="largo">
+                    <input matInput formControlName="direccion" placeholder="Dirección del usuario" />
+                </mat-form-field>
+                <h3>DATOS FINANCIEROS</h3>
+                <mat-form-field appearance="outline" class="largo">
+                    <input matInput formControlName="salario" placeholder="Salario del usuario" />
+                </mat-form-field>
+                <mat-form-field appearance="outline" class="largo">
+                    <input matInput formControlName="otrosIngresos" placeholder="Otros ingresos del usuario" />
+                </mat-form-field>
+                <mat-form-field appearance="outline" class="largo">
+                    <input matInput formControlName="gastosMensuales" placeholder="Gastos mensuales del usuario" />
+                </mat-form-field>
+                <mat-form-field appearance="outline" class="largo">
+                    <input matInput formControlName="gastosFinancieros" placeholder="Gastos financieros del usuario" />
+                </mat-form-field>
+            </div>
+        </form>
+    </div>
+</div>
+<div *ngIf="!token">
+    <h1>Debe loguearse para acceder</h1>
+</div>

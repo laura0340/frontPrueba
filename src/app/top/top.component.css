@@ -1,0 +1,38 @@
+:host {
+    margin: auto;
+}
+
+.main-container {
+        /* background-color: blue; */
+        border-radius: 0.5em;
+        margin-left: 25em;
+        margin-right: 54em !important;
+        padding-left: 50em;
+        margin-top: 0.3em;
+        display: flex;
+        align-items: flex-end;
+        /* justify-content: space-between; */
+        width: 20%;
+}
+
+.mat-tab-label {
+    min-width: 72px;
+}
+
+.mat-body p .mat-body-1 p .mat-typography p {
+    margin: auto !important;
+}
+
+.separator {
+    margin: 0 0.3em;
+    border-right: 2px solid red;
+}
+
+.option-menu {
+    color: yellow;
+}
+
+.option-selected {
+    color: burlywood;
+    text-decoration: underline;
+}

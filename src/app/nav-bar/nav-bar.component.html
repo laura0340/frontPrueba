@@ -1,0 +1,21 @@
+
+<div class="toolbar" role="banner">
+  <div class="space"></div>
+  <div>
+    <button mat-menu-item class="dark" (click)="logout()">
+      <mat-icon class="dark">exit_to_app</mat-icon>
+      <span>log out</span>
+    </button>
+  </div>
+    <div class="space"></div>
+    <div class="options">
+        <h3>MENÚ</h3>
+      <div *ngFor="let opt of options">
+        <div *ngIf="opt.type === 'item'" class="option" [routerLink]="opt.route" routerLinkActive="selected">
+          <mat-icon>{{opt.icon}}</mat-icon>
+          <div>&nbsp;&nbsp;</div>
+          {{opt.name}}
+        </div>
+      </div>
+    </div>
+</div>

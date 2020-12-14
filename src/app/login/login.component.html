@@ -1,0 +1,20 @@
+<div class="imagen">
+</div>
+<div class="form-login">
+    <img src="../../assets/coxti.jpg" />
+
+    <h1>Iniciar Sesión</h1>
+
+    <form (ngSubmit)="onSubmit(loginForm.value)" [formGroup]="loginForm">
+        <mat-form-field color="primary">
+            <h4>Correo</h4>
+            <input matInput type="text" (blur)="checkEmail = true" #email formControlName="userName" />
+        </mat-form-field>
+        <mat-form-field color="primary">
+            <h4>Contraseña</h4>
+            <input matInput type="password" formControlName="password" />
+        </mat-form-field>
+        <button mat-raised-button [disabled]="loginForm.invalid" class="press-button" *ngIf="!loading"
+            (click)="onSubmit()">Entrar <span>></span></button>
+    </form>
+</div>

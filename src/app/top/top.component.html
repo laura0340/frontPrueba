@@ -1,0 +1,13 @@
+<div class="main-container row">
+    <div class="last-items">
+        <button mat-icon-button [matMenuTriggerFor]="menu">
+            <mat-icon>settings</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu" class="backdrop">
+            <button mat-menu-item class="dark" (click)="logout()">
+                <mat-icon class="dark">exit_to_app</mat-icon>
+                <span>Salir</span>
+            </button>
+        </mat-menu>
+    </div>
+</div>

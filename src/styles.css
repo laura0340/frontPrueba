@@ -1,1 +1,70 @@
+You can add global styles to this file, and also import other style files
 /* You can add global styles to this file, and also import other style files */
+html, body { height: 100%; width: 100%;}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.row {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    justify-content: center;
+}
+
+.row .left-margin {
+    margin-left: 2em;
+}
+
+.column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.contain-table {
+    text-align: center;
+}
+
+.main-color-button {
+    background-color: aquamarine;
+    color: gray;
+}
+
+.second-color-button {
+    background-color: #2d323e;
+    color: white;
+}
+
+.simple-margin-left {
+    margin-left: 1em;
+}
+
+.right-aligned-header > .mat-content {
+    justify-content: space-between;
+}
+
+.mat-content > mat-panel-title, .mat-content > mat-panel-description {
+  flex: 0 0 auto;
+}
+
+.checkbox-class {
+    background-color:#2d323e;
+}
+
+.ngx-datatable.material .datatable-header .datatable-header-cell {
+    color: white;
+    font-size: 15px;
+    background-color: #2d323e;
+}
+
+.ngx-datatable.material{
+    border-radius: 0.5em;
+}
+
+
+.snak{
+    background-color: rgb(153, 50, 50);
+    color:lightgoldenrodyellow;
+    margin-top: 35em !important;
+    margin-left: 20em !important;
+  }

@@ -1,0 +1,40 @@
+<div class="container" *ngIf="token">
+    <div class="row header-content">
+        <div class="col">
+          <h2 class="header-title">Datos Personales</h2>
+        </div>
+    </div>
+    <div class="table-container">
+        <table class="table-content">
+            <!--Table head-->
+            <thead>
+                <tr>
+                <th>Nombre</th>
+                <th>Identificación</th>
+                <th>Celular</th>
+                <th>Correo electrónico</th>
+                <th>{{ 'Editar'}}</th>
+                </tr>
+            </thead>
+            <!--Table head-->
+            <!--Table body-->
+            <tbody>
+                <tr *ngFor="let usuario of listUsuarios" >
+                 <td>{{ usuario.nombre }}</td>
+                 <td>{{ usuario.numeroId }}</td>
+                 <td>{{ usuario.celular }}</td>
+                 <td>{{ usuario.email }}</td>
+                 <td class="center-text">
+                    <mat-icon (click)="deleteItem(usuario)">delete</mat-icon>
+                </td>
+                </tr>
+            </tbody>
+            <!--Table body-->
+        </table>
+    </div>
+</div>
+<div class="row header-content" *ngIf="!token">
+    <div class="col">
+      <h1 class="header-title">Debe loguearse para acceder</h1>
+    </div>
+</div>

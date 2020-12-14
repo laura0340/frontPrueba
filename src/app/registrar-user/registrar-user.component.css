@@ -1,0 +1,95 @@
+:host {
+    margin-bottom: 2em;
+}
+
+.head-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    background-color: white;
+    border-radius: 0.5em;
+    padding: 1em 2em;
+    padding-bottom: 0.3em;
+}
+
+.head-container h2 {
+    flex: 1;
+    color: gray;
+    font-size: 1.5em;
+}
+
+mat-form-field {
+    padding: 0.5em !important;
+}
+
+.head-container button {
+    flex: 1;
+    margin-top: 0;
+}
+
+.space {
+    height: 1em;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;    
+    margin-top: 0;
+}
+
+.form-container {
+    padding: 1em 2em;
+    background-color: white;
+}
+
+.largo {
+    flex: 4;
+    height: 7em !important;
+}
+
+.row hr {
+    width: 100%;
+    border: 1px solid rgba(125, 125, 125, 0.6);
+}
+
+h2, h4, h3 {
+    text-align: center;
+    color: blue !important;
+}
+
+.selector {
+    margin-left: 0.5em;
+}
+
+.mat-radio-button ~ .mat-radio-button {
+    margin-left: 16px;
+}
+
+.container {
+    margin-left: 20em !important;
+    margin: 2em 4em;
+    border: 1px solid #fff;
+    border-radius: 1em;
+    -webkit-box-shadow: 4px 4px 15px 0px rgba(201,191,201,1);
+    -moz-box-shadow: 4px 4px 15px 0px rgba(201,191,201,1);
+    box-shadow: 4px 4px 15px 0px rgba(201,191,201,1);
+}
+.mat-input-element {
+    height: 3em;
+}
+
+.unpressed-button {
+    background-color: white;
+    color: blue;
+    border: 2px solid blue !important;
+    border-radius: 15px;
+}
+
+h1 {
+    margin-left: 10em;
+    padding-left: 10em !important;
+    padding-top: 10em !important;
+    color: red;
+}
